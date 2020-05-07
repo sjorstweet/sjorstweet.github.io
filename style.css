@@ -1,0 +1,26 @@
+body{
+    background-color: #eeeeee;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tweet{
+    justify-content: center;
+}
+
+.tweet > img{
+    border: 2px darkgray solid;
+    margin-bottom: 5px;
+}
+
+.tweet > div{
+    width: 580px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 20px;
+}
