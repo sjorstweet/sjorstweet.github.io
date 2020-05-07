@@ -13,7 +13,6 @@ for(let i = 1; i < 35; i++){
 
     tweetText = document.createElement('div')
     tweetText.id = i;
-    tweetText.innerHTML = `${i}`
     switch(i){
         case 4:
             tweetText.innerHTML = 'They aint gonna catch me slipping'
