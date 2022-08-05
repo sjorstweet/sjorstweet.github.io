@@ -104,7 +104,7 @@ prompts = this.shuffle(prompts)
 const string = "abcdefghijklmnopqrstuvwxyz";
 this.button.innerHTML = ("Begin met de letter: " + string[Math.floor(Math.random() * string.length)].toUpperCase())
 
-function NextCategory(){
+function nextCategory(){
     this.button.innerHTML = prompts[currentIndex];
     currentIndex++
 
@@ -125,6 +125,11 @@ function shuffle(array) {
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
-    console.log(array)
     return array;
-  }
+}
+
+function reset(){
+    this.button.innerHTML = ("Begin met de letter: " + string[Math.floor(Math.random() * string.length)].toUpperCase())
+    currentIndex = 0;
+    this.prompts = this.shuffle(prompts)
+}

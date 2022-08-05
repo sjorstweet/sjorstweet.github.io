@@ -15,7 +15,7 @@ h1{
 
     box-shadow: 2px 2px #5a5d63;
 
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -23,4 +23,10 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#reset{
+    margin: 20px 0 0 0;
+    width: 100px;
+    height: 50px;
 }
