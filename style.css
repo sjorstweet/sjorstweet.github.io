@@ -2,25 +2,25 @@ body{
     background-color: #eeeeee;
 }
 
-#container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1{
+    color: #075ee0;
+    text-shadow: 0px 1px black;
 }
 
-.tweet{
-    justify-content: center;
-}
+#button{
+    width: 400px;
+    height: 200px;
+    white-space: normal;
+    word-wrap: break-word;
 
-.tweet > img{
-    border: 2px darkgray solid;
-    margin-bottom: 5px;
-}
+    box-shadow: 2px 2px #5a5d63;
 
-.tweet > div{
-    width: 580px;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    font-family: Georgia, Helvetica, sans-serif;
-    font-size: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
