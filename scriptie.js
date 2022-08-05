@@ -1,7 +1,4 @@
-let container = document.getElementById('container')
 let button = document.getElementById('button')
-
-let currentIndex = 0
 
 let prompts = [
     "Flora",
@@ -98,12 +95,12 @@ let newPrompts = [
 ];
 
 prompts = prompts.concat(newPrompts)
-
 prompts = this.shuffle(prompts)
 
 const string = "abcdefghijklmnopqrstuvwxyz";
 this.button.innerHTML = ("Begin met de letter: " + string[Math.floor(Math.random() * string.length)].toUpperCase())
 
+let currentIndex = 0
 function nextCategory(){
     this.button.innerHTML = prompts[currentIndex];
     currentIndex++
