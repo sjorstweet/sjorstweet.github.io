@@ -20,7 +20,7 @@ let prompts = [
     "Iets dat je op straat kan vinden",
     "Iets dat je op school kan vinden",
     "Drinken",
-    "Eeten",
+    "Eten",
     "Bij de snackbar",
     "Iets dat je in een restaurant kan bestellen",
     "Iets in de supermarkt",
@@ -61,8 +61,43 @@ let prompts = [
     "Een serie",
     "Een item uit een videogame",
     "Een fictief persoon",
-    "Een evenement/attractie"
+    "Een evenement/attractie",
+    "Een afkorting",
+    "Iets goedkoops",
+    "Een huishoudelijk object",
+    "Een analoog spel",
+    "Iets dat kinderen buiten doen",
+    "Iets dat in je zak past",
+    "Een kledingstuk/accessoire",
+    "Een bijvoeglijk naamwoord",
+    "Een kleur",
+    "Een mannennaam",
+    "Een vrouwennaam",
+    "Iets dat je in een kroeg kan vinden",
+    "Iets dat je in een portemonnee kan vinden",
+    "Iets gevaarlijks",
+    "Een monster",
+    "Iets duurs",
+    "Iets kleins",
+    "Iets groots",
+    "Een zelfstandig naamwoord",
+    "Iets dat je op werk kan vinden",
+    "Iets kleurloos",
+    "Iets kleurrijks",
+    "Iets dat je op vakantie kan doen",
+    "Iets met een specifieke geur",
+    "Iets wat je kan beklimmen",
+    "Iets dat je liever niet in huis hebt"
 ];
+
+let newPrompts = [
+    "Een ziekte",
+    "Een scheldwoord",
+    "Een wapen",
+    "Een taal"
+];
+
+prompts = prompts.concat(newPrompts)
 
 prompts = this.shuffle(prompts)
 
