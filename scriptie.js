@@ -1,8 +1,8 @@
 let button = document.getElementById('button')
 
 let prompts = [
-    "Flora",
-    "Fauna",
+    "Planten/bloemen",
+    "Een dier",
     "Bij de dierentuin",
     "Een Computer Term",
     "Een voertuig",
@@ -11,7 +11,7 @@ let prompts = [
     "Een app",
     "Iest wat je doodt als het op je valt",
     "Iets dat je kan vervormen met je handen",
-    "Iets baap gerelateerds",
+    "Iets p2 gerelateerds",
     "Iets waar je mee kan gooien",
     "Iets verslavends",
     "Iets dat je op straat kan vinden",
@@ -41,7 +41,7 @@ let prompts = [
     "Valuta",
     "Een god of godheid",
     "Iets uit de mythologie",
-    "Een baan",
+    "Een beroep",
     "Een sportclub",
     "Iet sportgerelateerds",
     "Een reeds overleden persoon",
@@ -91,7 +91,11 @@ let newPrompts = [
     "Een ziekte",
     "Een scheldwoord",
     "Een wapen",
-    "Een taal"
+    "Een taal",
+    "Een soort wiet/hash",
+"Een plek waar je jonko kan roken",
+"Een voetballer",
+"Een straat taal woord"
 ];
 
 prompts = prompts.concat(newPrompts)
