@@ -93,9 +93,9 @@ let newPrompts = [
     "Een wapen",
     "Een taal",
     "Een soort wiet/hash",
-"Een plek waar je jonko kan roken",
-"Een voetballer",
-"Een straat taal woord"
+    "Een plek waar je jonko kan roken",
+    "Een voetballer",
+    "Een straat taal woord"
 ];
 
 prompts = prompts.concat(newPrompts)
