@@ -44,7 +44,7 @@ let prompts = [
     "Een beroep",
     "Een sportclub",
     "Iet sportgerelateerds",
-    "Een reeds overleden persoon",
+    "Een overleden persoon",
     "Een personage uit een boek/film",
     "Een boek/cartoon/strip",
     "Een film",
@@ -53,12 +53,11 @@ let prompts = [
     "Een videospel",
     "Een pokemon",
     "Iets sprookjesachtig",
-    "Een meme",
     "Een bekend persoon",
     "Een serie",
     "Een item uit een videogame",
     "Een fictief persoon",
-    "Een evenement/attractie",
+    "Een evenement/attractie/attractiepark",
     "Een afkorting",
     "Iets goedkoops",
     "Een huishoudelijk object",
@@ -73,7 +72,6 @@ let prompts = [
     "Iets dat je in een kroeg kan vinden",
     "Iets dat je in een portemonnee kan vinden",
     "Iets gevaarlijks",
-    "Een monster",
     "Iets duurs",
     "Iets kleins",
     "Iets groots",
@@ -95,7 +93,7 @@ let newPrompts = [
     "Een soort wiet/hash",
     "Een plek waar je jonko kan roken",
     "Een voetballer",
-    "Een straat taal woord"
+    "Een straattaal woord"
 ];
 
 prompts = prompts.concat(newPrompts)
