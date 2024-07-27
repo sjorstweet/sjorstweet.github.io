@@ -89,3 +89,9 @@ function voegSpelerToe() {
 function resetAllePunten() {
     game.resetAllePunten();
 }
+
+document.getElementById('spelerNaam').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        voegSpelerToe();
+    }
+});
