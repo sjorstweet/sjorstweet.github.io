@@ -1,7 +1,7 @@
 class Speler {
-    constructor(naam) {
+    constructor(naam, punten = 0) {
         this.naam = naam;
-        this.punten = 0;
+        this.punten = punten;
     }
 
     resetPunten() {
@@ -22,22 +22,38 @@ class Speler {
 class Game {
     constructor() {
         this.spelers = [];
+        this.loadFromLocalStorage();
     }
 
     voegSpelerToe(naam) {
         const speler = new Speler(naam);
         this.spelers.push(speler);
+        this.saveToLocalStorage();
         this.updateUI();
     }
 
     verwijderSpeler(index) {
         this.spelers.splice(index, 1);
+        this.saveToLocalStorage();
         this.updateUI();
     }
 
     resetAllePunten() {
         this.spelers.forEach(speler => speler.resetPunten());
+        this.saveToLocalStorage();
         this.updateUI();
+    }
+
+    saveToLocalStorage() {
+        localStorage.setItem('spelers', JSON.stringify(this.spelers));
+    }
+
+    loadFromLocalStorage() {
+        const savedSpelers = JSON.parse(localStorage.getItem('spelers'));
+        if (savedSpelers) {
+            this.spelers = savedSpelers.map(speler => new Speler(speler.naam, speler.punten));
+            this.updateUI();
+        }
     }
 
     updateUI() {
@@ -50,8 +66,8 @@ class Game {
                 <span class="speler-naam">${speler.naam}</span>
                 <div class="speler-buttons">
                 <span class="speler-punten">${speler.punten}</span>
-                <button class="add-punten" onclick="game.spelers[${index}].puntEraf(); game.updateUI()">-</button>
-                <button class="sub-punten" onclick="game.spelers[${index}].puntErbij(); game.updateUI()">+</button>
+                <button class="add-punten" onclick="game.spelers[${index}].puntEraf(); game.saveToLocalStorage(); game.updateUI()">-</button>
+                <button class="sub-punten" onclick="game.spelers[${index}].puntErbij(); game.saveToLocalStorage(); game.updateUI()">+</button>
                 <button class="verwijder-speler" onclick="game.verwijderSpeler(${index})">🗑</button>
                 </div>
             `;
